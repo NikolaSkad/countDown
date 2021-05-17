@@ -1,23 +1,39 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <section className="timer-container">
+        <section className="timer">
+          <div>
+            <span className="mdi mdi-calendar-clock timer-icon"></span>
+            <h2>Countdown Timer</h2>
+            <p>Countdown to a really special date. One you could or would never imagine!</p>
+          </div>
+          <div>
+            <section>
+              <p>85</p>
+              <p><small>Days</small></p>
+            </section>
+            <span>:</span>
+            <section>
+              <p>25</p>
+              <p><small>Hours</small></p>
+            </section>
+            <span>:</span>
+            <section>
+              <p>55</p>
+              <p><small>Minutes</small></p>
+            </section>
+            <span>:</span>
+            <section>
+              <p>15</p>
+              <p><small>Seconds</small></p>
+            </section>
+          </div>
+        </section>
+      </section>
     </div>
   );
 }
